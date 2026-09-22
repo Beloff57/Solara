@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,75 +6,237 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Solara — restorative retreats, mindful movement and slow living.">
   <title>Solara — Wellness Retreats</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+  <div class="page-noise" aria-hidden="true"></div>
+
   <header class="header">
-    <a class="logo" href="#home">solara<span>°</span></a>
+    <a class="logo" href="#home" aria-label="Solara home">
+      solara<span>°</span>
+    </a>
+
     <nav class="nav" aria-label="Main navigation">
       <a href="#experience">Experience</a>
       <a href="#rituals">Rituals</a>
       <a href="#reserve">Reserve</a>
     </nav>
-    <button class="menu-toggle" aria-expanded="false" aria-controls="mobileNav">Menu</button>
+
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="mobileNav"
+      aria-label="Open navigation"
+    >
+      <span class="menu-label">Menu</span>
+      <span class="menu-icon" aria-hidden="true">
+        <span></span>
+        <span></span>
+      </span>
+    </button>
+
     <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
-      <a href="#experience">Experience</a>
-      <a href="#rituals">Rituals</a>
-      <a href="#reserve">Reserve</a>
+      <a href="#experience">Experience <span>↗</span></a>
+      <a href="#rituals">Rituals <span>↗</span></a>
+      <a href="#reserve">Reserve <span>↗</span></a>
     </nav>
   </header>
 
   <main id="home">
+
+    <!-- HERO -->
     <section class="hero">
-      <div class="hero-orbit"></div>
-      <div class="hero-copy">
-        <p class="eyebrow">Slow mornings / Clear minds / Open skies</p>
-        <h1>Return<br>to your<br><span>natural</span> rhythm.</h1>
-        <p class="hero-description">Small-group wellness retreats designed to help you reconnect with your body, your breath and the world around you.</p>
-        <a class="button" href="#reserve">Find your retreat ↗</a>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-orbit" aria-hidden="true">
+        <div class="orbit-dot"></div>
       </div>
-      <div class="hero-note">A new kind of escape<br>for a fuller life.</div>
+
+      <div class="hero-copy">
+        <p class="eyebrow hero-eyebrow reveal-item">
+          <span class="eyebrow-line"></span>
+          Slow mornings / Clear minds / Open skies
+        </p>
+
+        <h1 class="hero-title">
+          <span class="title-line"><span>Return</span></span>
+          <span class="title-line"><span>to your</span></span>
+          <span class="title-line title-accent"><span>natural</span> <i>rhythm.</i></span>
+        </h1>
+
+        <div class="hero-bottom reveal-item">
+          <p class="hero-description">
+            Small-group wellness retreats designed to help you reconnect
+            with your body, your breath and the world around you.
+          </p>
+
+          <a class="button button-hero" href="#reserve">
+            <span>Find your retreat</span>
+            <span class="button-arrow">↗</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-note reveal-item">
+        <span class="note-symbol">✳</span>
+        <p>A new kind of escape<br>for a fuller life.</p>
+        <span class="note-scroll">Scroll to explore ↓</span>
+      </div>
+
+      <div class="hero-number" aria-hidden="true">01</div>
     </section>
 
+    <!-- EXPERIENCE -->
     <section class="experience section" id="experience">
-      <div class="section-top"><p class="eyebrow">01 / The experience</p><span>Beyond the ordinary</span></div>
+      <div class="section-top reveal-item">
+        <p class="eyebrow">01 / The experience</p>
+        <span>Beyond the ordinary <i>↗</i></span>
+      </div>
+
       <div class="experience-grid">
-        <h2>Rest is<br>a practice.</h2>
-        <div>
-          <p class="large-copy">Solara brings together movement, nourishing food, nature and intentional pauses. No packed schedules. No performance. Just space to reset.</p>
-          <div class="pill-list"><span>Mindful movement</span><span>Nature immersion</span><span>Restorative food</span><span>Digital quiet</span></div>
+        <div class="heading-wrap reveal-item">
+          <span class="heading-index">01</span>
+          <h2>Rest is<br>a practice.</h2>
+        </div>
+
+        <div class="experience-content reveal-item reveal-delay-1">
+          <p class="large-copy">
+            Solara brings together movement, nourishing food, nature
+            and intentional pauses. No packed schedules. No performance.
+            Just space to reset.
+          </p>
+
+          <div class="pill-list" aria-label="Solara experiences">
+            <span>Mindful movement</span>
+            <span>Nature immersion</span>
+            <span>Restorative food</span>
+            <span>Digital quiet</span>
+          </div>
+
+          <div class="text-link-wrap">
+            <a class="text-link" href="#rituals">
+              Discover our rituals
+              <span>↗</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- RITUALS -->
     <section class="rituals section" id="rituals">
-      <div class="section-top"><p class="eyebrow">02 / Daily rituals</p><span>Designed for balance</span></div>
+      <div class="section-top reveal-item">
+        <p class="eyebrow">02 / Daily rituals</p>
+        <span>Designed for balance <i>✳</i></span>
+      </div>
+
+      <div class="ritual-intro reveal-item">
+        <p>Small moments.<br>Lasting changes.</p>
+        <span>Three gentle anchors<br>for your day.</span>
+      </div>
+
       <div class="ritual-grid">
-        <article class="ritual-card ritual-sun"><span>06:30 — 08:00</span><h3>Morning light</h3><p>Gentle movement and breathwork as the day begins.</p></article>
-        <article class="ritual-card ritual-water"><span>12:00 — 14:00</span><h3>Slow nourishment</h3><p>Seasonal food, shared tables and time without a clock.</p></article>
-        <article class="ritual-card ritual-earth"><span>18:00 — 20:00</span><h3>Golden hour</h3><p>Walks, reflection and quiet conversations under open skies.</p></article>
+
+        <article class="ritual-card ritual-sun reveal-item">
+          <div class="card-top">
+            <span>06:30 — 08:00</span>
+            <span class="card-symbol">☼</span>
+          </div>
+
+          <div class="card-bottom">
+            <h3>Morning light</h3>
+            <p>Gentle movement and breathwork as the day begins.</p>
+          </div>
+
+          <div class="card-number">01</div>
+        </article>
+
+        <article class="ritual-card ritual-water reveal-item reveal-delay-1">
+          <div class="card-top">
+            <span>12:00 — 14:00</span>
+            <span class="card-symbol">≈</span>
+          </div>
+
+          <div class="card-bottom">
+            <h3>Slow nourishment</h3>
+            <p>Seasonal food, shared tables and time without a clock.</p>
+          </div>
+
+          <div class="card-number">02</div>
+        </article>
+
+        <article class="ritual-card ritual-earth reveal-item reveal-delay-2">
+          <div class="card-top">
+            <span>18:00 — 20:00</span>
+            <span class="card-symbol">☾</span>
+          </div>
+
+          <div class="card-bottom">
+            <h3>Golden hour</h3>
+            <p>Walks, reflection and quiet conversations under open skies.</p>
+          </div>
+
+          <div class="card-number">03</div>
+        </article>
+
       </div>
     </section>
 
+    <!-- QUOTE -->
     <section class="quote section">
-      <p>“The space between doing and being is where we begin again.”</p>
-      <span>— Solara field notes</span>
+      <div class="quote-decoration" aria-hidden="true">✳</div>
+
+      <p class="quote-text reveal-item">
+        “The space between doing and being is where we begin again.”
+      </p>
+
+      <span class="quote-author reveal-item reveal-delay-1">
+        — Solara field notes
+      </span>
     </section>
 
+    <!-- RESERVE -->
     <section class="reserve section" id="reserve">
-      <p class="eyebrow">03 / Your next pause</p>
-      <h2>Make space<br>for yourself.</h2>
-      <div class="reserve-bottom">
-        <p>Tell us what you need from your next retreat and we'll help you find the right setting.</p>
-        <a class="button button-dark" href="mailto:hello@solara-retreats.example">hello@solara-retreats.example ↗</a>
+      <div class="reserve-decoration" aria-hidden="true">
+        <span></span>
+        <span></span>
+      </div>
+
+      <p class="eyebrow reveal-item">03 / Your next pause</p>
+
+      <h2 class="reserve-title reveal-item">
+        Make space<br>for yourself.
+      </h2>
+
+      <div class="reserve-bottom reveal-item">
+        <p>
+          Tell us what you need from your next retreat and we'll help
+          you find the right setting.
+        </p>
+
+        <a class="button button-dark" href="mailto:hello@solara-retreats.example">
+          <span>hello@solara-retreats.example</span>
+          <span class="button-arrow">↗</span>
+        </a>
       </div>
     </section>
+
   </main>
 
-  <footer class="footer"><span>solara°</span><span>Retreats for modern living / 2026</span></footer>
+  <footer class="footer">
+    <span class="footer-logo">solara°</span>
+    <span>Retreats for modern living / 2026</span>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
